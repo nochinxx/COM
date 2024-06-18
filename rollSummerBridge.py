@@ -1,46 +1,50 @@
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from datetime import datetime
+import csv
 
-students = [
-    {
-        "Term": 202460,
-        "StudentID": "M00315946",
-        "LastName": "Bastos",
-        "FirstName": "Leticia",
-        "MiddleName": "De Melo",
-        "CRN": 60882,
-        "InstructorID": "M00246143",
-        "InstructorName": "Arbona, Shaila",
-        "CourseID": "COUN 105NC",
-        "Title": "Achieving Success in College",
-        "Phone": "",
-        "COMEmail": "lbastos1016@mycom.marin.edu",
-        "PerEmail": "lmelo5209@gmail.com",
-        "Enrolled": 18,
-        "CCP": "",
-    },
-    {
-        "Term": 202460,
-        "StudentID": "M00314902",
-        "LastName": "Castro Marroquin",
-        "FirstName": "Edgar",
-        "MiddleName": "Denilson",
-        "CRN": 60882,
-        "InstructorID": "M00246143",
-        "InstructorName": "Arbona, Shaila",
-        "CourseID": "COUN 105NC",
-        "Title": "Achieving Success in College",
-        "Phone": "(415) 497-2238",
-        "COMEmail": "ecastro1780@mycom.marin.edu",
-        "PerEmail": "edgardenilsoncastromarroquin@gmail.com",
-        "Enrolled": 18,
-        "CCP": "",
-    },
-    # Add the rest of the students here...
-]
-
+students = []
 attendance = []
+
+
+# Load students from the file
+def load_students(filename):
+    with open(filename, mode="r") as file:
+        reader = csv.DictReader(file, delimiter="\t")
+        for row in reader:
+            students.append(row)
+
+
+def add_student():
+    student = {
+        "Term": input("Enter Term: "),
+        "StudentID": input("Enter Student ID: "),
+        "LastName": input("Enter Last Name: "),
+        "FirstName": input("Enter First Name: "),
+        "MiddleName": input("Enter Middle Name: "),
+        "CRN": input("Enter CRN: "),
+        "InstructorID": input("Enter Instructor ID: "),
+        "InstructorName": input("Enter Instructor Name: "),
+        "CourseID": input("Enter Course ID: "),
+        "Title": input("Enter Course Title: "),
+        "Phone": input("Enter Phone: "),
+        "COMEmail": input("Enter College Email: "),
+        "PerEmail": input("Enter Personal Email: "),
+        "Enrolled": input("Enter Enrollment: "),
+        "CCP": input("Enter CCP: "),
+    }
+    students.append(student)
+
+
+def search_students(query):
+    results = []
+    for idx, student in enumerate(students):
+        full_name = (
+            f"{student['FirstName']} {student['MiddleName']} {student['LastName']}"
+        )
+        if query.lower() in full_name.lower():
+            results.append((idx, full_name))
+    return results
 
 
 def mark_attendance(student_index):
@@ -72,6 +76,7 @@ def generate_pdf(attendance_list):
 
 
 def main():
+    load_students("peopleESL.txt")
     print("All students:")
     for idx, student in enumerate(students):
         full_name = (
@@ -81,19 +86,30 @@ def main():
 
     while True:
         query = input(
-            "Enter the number corresponding to the student (or 'exit' to quit): "
+            "Enter the number corresponding to the student, 'add' to add a student, 'search' to search for a student, or 'exit' to quit: "
         )
         if query.lower() == "exit":
             break
-
-        try:
-            selected_idx = int(query)
-            if 0 <= selected_idx < len(students):
-                mark_attendance(selected_idx)
+        elif query.lower() == "add":
+            add_student()
+        elif query.lower() == "search":
+            search_query = input("Enter a few letters of the student's name: ")
+            results = search_students(search_query)
+            if results:
+                print("Search results:")
+                for idx, full_name in results:
+                    print(f"{idx}: {full_name}")
             else:
-                print("Invalid selection. Try again.")
-        except ValueError:
-            print("Invalid input. Please enter a number.")
+                print("No matching students found.")
+        else:
+            try:
+                selected_idx = int(query)
+                if 0 <= selected_idx < len(students):
+                    mark_attendance(selected_idx)
+                else:
+                    print("Invalid selection. Try again.")
+            except ValueError:
+                print("Invalid input. Please enter a number, 'add', or 'search'.")
 
     generate_pdf(attendance)
 
