@@ -34,6 +34,7 @@ def add_student():
         "CCP": "void",
     }
     students.append(student)
+    print_students()  # Print updated list after adding a new student
 
 
 def search_students(query):
@@ -58,6 +59,16 @@ def mark_attendance(student_index):
             "id": student["StudentID"],
         }
     )
+    students.pop(student_index)  # Remove the student from the list
+    print_students()  # Print updated list after marking attendance
+
+
+def delete_student(student_index):
+    student = students.pop(student_index)
+    print(
+        f"Deleted {student['FirstName']} {student['LastName']} (ID: {student['StudentID']})."
+    )
+    print_students()  # Print updated list after deleting a student
 
 
 def generate_pdf(attendance_list):
@@ -75,26 +86,27 @@ def generate_pdf(attendance_list):
     print(f"PDF report generated: {pdf_file}")
 
 
-def main():
-    load_students("peopleESL.txt")
-    print("All students:")
+def print_students():
+    print("Current list of students:")
     for idx, student in enumerate(students):
         full_name = (
             f"{student['FirstName']} {student['MiddleName']} {student['LastName']}"
         )
         print(f"{idx}: {full_name}")
 
+
+def main():
+    load_students("peopleESL.txt")
+    print_students()
+
     while True:
         query = input(
-            "Enter the number corresponding to the student, 'add' to add a student, 'search' to search for a student, or 'exit' to quit: "
+            "Enter the number corresponding to the student, 'add' to add a student, 'search' to search for a student, 'delete' to delete a student, or 'exit' to quit: "
         )
         if query.lower() == "exit":
             break
         elif query.lower() == "add":
             add_student()
-            for idx, student in enumerate(students):
-                full_name = f"{student['FirstName']} {student['LastName']}"
-                print(f"{idx}: {full_name}")
         elif query.lower() == "search":
             search_query = input("Enter a few letters of the student's name: ")
             results = search_students(search_query)
@@ -104,6 +116,15 @@ def main():
                     print(f"{idx}: {full_name}")
             else:
                 print("No matching students found.")
+        elif query.lower().startswith("delete"):
+            try:
+                selected_idx = int(query.split()[1])
+                if 0 <= selected_idx < len(students):
+                    delete_student(selected_idx)
+                else:
+                    print("Invalid selection. Try again.")
+            except (ValueError, IndexError):
+                print("Invalid input. Please enter 'delete' followed by a number.")
         else:
             try:
                 selected_idx = int(query)
@@ -112,7 +133,9 @@ def main():
                 else:
                     print("Invalid selection. Try again.")
             except ValueError:
-                print("Invalid input. Please enter a number, 'add', or 'search'.")
+                print(
+                    "Invalid input. Please enter a number, 'add', 'search', or 'delete'."
+                )
 
     generate_pdf(attendance)
 

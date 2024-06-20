@@ -1,21 +1,24 @@
-Term	StudentID	LastName	FirstName	MiddleName	CRN	InstructorID	InstructorName	CourseID	Title	Phone	COMEmail	PerEmail	Enrolled	CCP
-202460	M00315946	Bastos	Leticia	De Melo	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College		lbastos1016@mycom.marin.edu	lmelo5209@gmail.com	18	
-202460	M00314902	Castro Marroquin	Edgar	Denilson	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 497-2238 	ecastro1780@mycom.marin.edu	edgardenilsoncastromarroquin@gmail.com	18	
-202460	M00325977	Cuyuch Lopez	Darlin	Yorleny	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 246-2100 	dcuyuchlopez5702@mycom.marin.edu	darlincuyuch0@gmail.com	18	
-202460	M00328463	Ferreira	Isabella	Araujo	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 306-3424 	iferreira1066@mycom.marin.edu	isabellaferreirabailarina@gmail.com	18	
-202460	M00324679	Garcia	Santos	Antonio	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 306-2390 	sgarcia1516@mycom.marin.edu	sg03885@srcs.org	18	
-202460	M00325607	Jimenez Gomez	Jonathan	Josue	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 595-5624 	jjimenezgomez9912@mycom.marin.edu	predicadorjonathanjimenez@gmail.com	18	
-202460	M00327676	Juarez Urizar	Juan	Josue	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College		jjuarezurizar5323@mycom.marin.edu	josue20051114@gmail.com	18	
-202460	M00309288	Loarca	Erick	Gilberto	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 261-2514 	eloarca6816@mycom.marin.edu	erickperezep998895@gmail.com	18	
-202460	M00327948	Lucas Gomez	Rigoberto		60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 524-9573 	rlucasgomez5778@mycom.marin.edu	rigolucas415@icloud.com	18	
-202460	M00323308	Merilien	Faradia		60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 532-6781 	fmerilien9601@mycom.marin.edu	merilienfaradia922@gmail.com	18	
-202460	M00315626	Ocampo Valenzuela	Sagrario	Adilene	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 879-5698 	socampovalenz2282@mycom.marin.edu	sagrarioocampovalenzuela@gmail.com	18	
-202460	M00326743	Oxlaj Gonzalez	Juana	Helinda	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 246-1299 	joxlajgonzale5112@mycom.marin.edu	hoxlaj81@gmail.com	18	
-202460	M00152399	Peach	Krista	Y	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 302-5681 	kpeach@mycom.marin.edu	ktapeach@gmail.com	18	
-202460	M00315255	Santos	Julia	Gabriela	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 879-2584 	jsantos6177@mycom.marin.edu	juliasantos020709@gmail.com	18	
-202460	M00313841	Solis	Yuleysi	Marisela	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(510) 228-9014 	ysolis2002@mycom.marin.edu	ys02636@srcs.org	18	
-202460	M00325961	Solis Gomez	Kimberly	Yohana	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 250-0417 	ksolisgomez7742@mycom.marin.edu	kimbrlysolisgomez@gmail.com	18	
-202460	M00316349	Valdivia	Genesis	Leonor	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(628) 666-7643 	gvaldivia7520@mycom.marin.edu	geneleonormedrano@icloud.com	18	
-202460	M00326316	Vicente Mazariegos	Karina	Magaly	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 720-4342 	kvicentemazar4023@mycom.marin.edu	vicentemagaly22@gmail.com	18	
-202460	M00327877	Garcia Puac	Karina	Elena	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 342-4091 	kgarciapuac5443@mycom.marin.edu	kg233791@gmail.com	20	
-202460	M00325785	Mendez Gomez	Keila	Irasema	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 517-6658 	kmendezgomez9047@mycom.marin.edu	irasemag873@gmail.com	20	
+StudentID	LastName	FirstName	MiddleName	CRN	InstructorID	InstructorName	CourseID	Title	Phone	COMEmail	PerEmail	Enrolled	CCP
+M00315946	Bastos	Leticia	De Melo	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College		lbastos1016@mycom.marin.edu	lmelo5209@gmail.com	18	
+M00314902	Castro Marroquin	Edgar	Denilson	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 497-2238 	ecastro1780@mycom.marin.edu	edgardenilsoncastromarroquin@gmail.com	18	
+M00325977	Cuyuch Lopez	Darlin	Yorleny	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 246-2100 	dcuyuchlopez5702@mycom.marin.edu	darlincuyuch0@gmail.com	18	
+M00328463	Ferreira	Isabella	Araujo	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 306-3424 	iferreira1066@mycom.marin.edu	isabellaferreirabailarina@gmail.com	18	
+M00324679	Garcia	Santos	Antonio	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 306-2390 	sgarcia1516@mycom.marin.edu	sg03885@srcs.org	18	
+M00325607	Jimenez Gomez	Jonathan	Josue	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 595-5624 	jjimenezgomez9912@mycom.marin.edu	predicadorjonathanjimenez@gmail.com	18	
+M00327676	Juarez Urizar	Juan	Josue	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College		jjuarezurizar5323@mycom.marin.edu	josue20051114@gmail.com	18	
+M00309288	Loarca	Erick	Gilberto	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 261-2514 	eloarca6816@mycom.marin.edu	erickperezep998895@gmail.com	18	
+M00327948	Lucas Gomez	Rigoberto		60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 524-9573 	rlucasgomez5778@mycom.marin.edu	rigolucas415@icloud.com	18	
+M00323308	Merilien	Faradia		60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 532-6781 	fmerilien9601@mycom.marin.edu	merilienfaradia922@gmail.com	18	
+M00315626	Ocampo Valenzuela	Sagrario	Adilene	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 879-5698 	socampovalenz2282@mycom.marin.edu	sagrarioocampovalenzuela@gmail.com	18	
+M00326743	Oxlaj Gonzalez	Juana	Helinda	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 246-1299 	joxlajgonzale5112@mycom.marin.edu	hoxlaj81@gmail.com	18	
+M00152399	Peach	Krista	Y	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 302-5681 	kpeach@mycom.marin.edu	ktapeach@gmail.com	18	
+M00315255	Santos	Julia	Gabriela	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 879-2584 	jsantos6177@mycom.marin.edu	juliasantos020709@gmail.com	18	
+M00313841	Solis	Yuleysi	Marisela	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(510) 228-9014 	ysolis2002@mycom.marin.edu	ys02636@srcs.org	18	
+M00325961	Solis Gomez	Kimberly	Yohana	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 250-0417 	ksolisgomez7742@mycom.marin.edu	kimbrlysolisgomez@gmail.com	18	
+M00316349	Valdivia	Genesis	Leonor	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(628) 666-7643 	gvaldivia7520@mycom.marin.edu	geneleonormedrano@icloud.com	18	
+M00326316	Vicente Mazariegos	Karina	Magaly	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 720-4342 	kvicentemazar4023@mycom.marin.edu	vicentemagaly22@gmail.com	18	
+M00327877	Garcia Puac	Karina	Elena	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 342-4091 	kgarciapuac5443@mycom.marin.edu	kg233791@gmail.com	20	
+M00325785	Mendez Gomez	Keila	Irasema	60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College	(415) 517-6658 	kmendezgomez9047@mycom.marin.edu	irasemag873@gmail.com	20	
+M00327917	Escobar	Michael		60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College					
+M00328802	Lopez	Kayla 		60882	M00246143	Arbona, Shaila 	COUN 105NC	Achieving Success in College					
+M00327645	Huete	Daniela	Fernanda	60881	M00246143	Arbona, Shaila 	COUN 105	Achieving Success in College	(669) 272-4247 	dhuete6153@mycom.marin.edu	danielahuete160@gmail.com	2	
