@@ -17,21 +17,21 @@ def load_students(filename):
 
 def add_student():
     student = {
-        "Term": input("Enter Term: "),
+        "Term": "void",
         "StudentID": input("Enter Student ID: "),
         "LastName": input("Enter Last Name: "),
         "FirstName": input("Enter First Name: "),
-        "MiddleName": input("Enter Middle Name: "),
-        "CRN": input("Enter CRN: "),
-        "InstructorID": input("Enter Instructor ID: "),
-        "InstructorName": input("Enter Instructor Name: "),
-        "CourseID": input("Enter Course ID: "),
-        "Title": input("Enter Course Title: "),
-        "Phone": input("Enter Phone: "),
-        "COMEmail": input("Enter College Email: "),
-        "PerEmail": input("Enter Personal Email: "),
-        "Enrolled": input("Enter Enrollment: "),
-        "CCP": input("Enter CCP: "),
+        "MiddleName": "void",
+        "CRN": "void",
+        "InstructorID": "void",
+        "InstructorName": "void",
+        "CourseID": "void",
+        "Title": "void",
+        "Phone": "void",
+        "COMEmail": "void",
+        "PerEmail": "void",
+        "Enrolled": "void",
+        "CCP": "void",
     }
     students.append(student)
 
@@ -50,11 +50,11 @@ def search_students(query):
 def mark_attendance(student_index):
     student = students[student_index]
     print(
-        f"Marking {student['FirstName']} {student['MiddleName']} {student['LastName']} (ID: {student['StudentID']}) as present."
+        f"Marking {student['FirstName']} {student['LastName']} (ID: {student['StudentID']}) as present."
     )
     attendance.append(
         {
-            "name": f"{student['FirstName']} {student['MiddleName']} {student['LastName']}",
+            "name": f"{student['FirstName']} {student['LastName']}",
             "id": student["StudentID"],
         }
     )
@@ -92,6 +92,9 @@ def main():
             break
         elif query.lower() == "add":
             add_student()
+            for idx, student in enumerate(students):
+                full_name = f"{student['FirstName']} {student['LastName']}"
+                print(f"{idx}: {full_name}")
         elif query.lower() == "search":
             search_query = input("Enter a few letters of the student's name: ")
             results = search_students(search_query)
